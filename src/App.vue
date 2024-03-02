@@ -4,7 +4,10 @@ import { RouterView } from "vue-router";
 
 <template>
   <div id="vivo-empresas">
-    <RouterView />
+    <v-menu>
+      <!-- Hamburguer Icon -->
+    </v-menu>
+    <RouterView  />
   </div>
 </template>
 
