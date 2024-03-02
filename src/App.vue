@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <RouterView />
+  <div id="vivo-empresas">
+    <RouterView />
+  </div>
 </template>
 
-<style scoped>
-
+<style lang="scss">
+#vivo-empresas {
+  font-family: "Poppins";
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+}
 </style>
