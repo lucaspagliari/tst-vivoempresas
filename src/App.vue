@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
+
 </script>
 
 <template>
   <div id="vivo-empresas">
     <v-menu>
-      <!-- Hamburguer Icon -->
+      <v-icon icon="menu"></v-icon>
     </v-menu>
     <RouterView  />
   </div>

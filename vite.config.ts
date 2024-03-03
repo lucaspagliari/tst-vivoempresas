@@ -4,6 +4,8 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import ViteWebfontDownload from 'vite-plugin-webfont-dl'
+import ViteSvgLoader from 'vite-svg-loader'
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,6 +17,7 @@ export default defineConfig({
     }),
 
     ViteWebfontDownload(),
+    ViteSvgLoader()
   ],
   resolve: {
     alias: {

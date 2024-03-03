@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component VIcon > should render component and match spnapshot 1`] = `"<span data-v-5f2d8097="" class="v-icon"><!----></span>"`;
