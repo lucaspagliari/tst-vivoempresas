@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-
 </script>
 
 <template>
@@ -8,7 +7,8 @@ import { RouterView } from "vue-router";
     <v-menu>
       <v-icon icon="menu"></v-icon>
     </v-menu>
-    <RouterView  />
+    <RouterView class="main-content" />
+
   </div>
 </template>
 
@@ -18,5 +18,9 @@ import { RouterView } from "vue-router";
   width: 100%;
   min-height: 100vh;
   overflow: auto;
+
+  .main-content {
+    padding: 0 15%;
+  }
 }
 </style>
