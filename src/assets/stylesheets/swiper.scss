@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+.swiper-button {
+  &-next,
+  &-prev,
+  &-lock,
+  &-disabled {
+    color: $purple !important;
+
+    &::after {
+      font-size: $font-size-default;
+      font-weight: bolder;
+    }
+  }
+}
