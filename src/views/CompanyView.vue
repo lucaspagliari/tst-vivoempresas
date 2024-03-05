@@ -16,31 +16,42 @@ const techs = [
 </script>
 
 <template>
-  <div class="home">
-    <VSpacer :size="8" />
+  <div class="company">
+    <VSpacer :size="6" />
 
-    <div class="title">
-      <h1>Tecnologias</h1>
+    <h1 class="company__title">Tecnologias</h1>
+    <div class="company__technologies">
+      <VTechCarousel :techs="techs" />
     </div>
 
-    <div class="home__technologies">
-      <VTechCarousel :techs="techs" />
+    <h1 class="company__title">Descobrir</h1>
+    <div class="company__plans">
+      <v-plan-card></v-plan-card>
+      <v-plan-card></v-plan-card>
+      <v-plan-card></v-plan-card>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.home {
+.company {
   &__technologies {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+  }
+  &__title {
+    margin: 0 15%;
   }
 
-  .title {
-    margin: 0 15%;
+  &__plans {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    grid-template-columns: repeat(3, auto);
+    gap: 18px;
   }
 }
 </style>
