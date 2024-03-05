@@ -19,7 +19,9 @@ const techs = [
   <div class="home">
     <VSpacer :size="8" />
 
-    <h1>Tecnologias</h1>
+    <div class="title">
+      <h1>Tecnologias</h1>
+    </div>
 
     <div class="home__technologies">
       <VTechCarousel :techs="techs" />
@@ -31,9 +33,14 @@ const techs = [
 .home {
   &__technologies {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
+  }
+
+  .title {
+    margin: 0 15%;
   }
 }
 </style>
