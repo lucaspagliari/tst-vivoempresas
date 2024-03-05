@@ -9,9 +9,10 @@
 
 <style scoped lang="scss">
 .v-menu {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40px auto;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   height: 88px;
   box-shadow: $low-black-shadow;
   padding: 1rem 1.5rem;
