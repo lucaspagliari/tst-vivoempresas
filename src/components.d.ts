@@ -12,6 +12,7 @@ declare module 'vue' {
     VIcon: typeof import('./components/VIcon.vue')['default']
     VLogo: typeof import('./components/VLogo.vue')['default']
     VMenu: typeof import('./components/VMenu.vue')['default']
+    VNavigationBar: typeof import('./components/VNavigationBar.vue')['default']
     VSpacer: typeof import('./components/VSpacer.vue')['default']
     VTechCard: typeof import('./components/VTechCard.vue')['default']
     VTechCarousel: typeof import('./components/VTechCarousel.vue')['default']

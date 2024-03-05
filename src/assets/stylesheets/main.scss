@@ -1,4 +1,13 @@
 @import './reset.scss';
 @import './variables.scss';
 @import './typography.scss';
+@import './transitions.scss';
 
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba($gray, .33);
+  border-radius: 4px;
+}
