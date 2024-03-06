@@ -1,28 +1,32 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const p = defineProps<{
+  title?: string;
+  subtitle?: string;
+  icon?: string;
+  badge?: string;
+}>();
+</script>
 
 <template>
   <div class="v-plan-card">
     <div class="v-plan-card__features">
-      <div class="v-plan-card__badge">
-        O MELHOR CUSTO BENEFÍCIO
-      </div>
+      <div v-if="badge" class="v-plan-card__badge">{{ badge }}</div>
 
       <div>
-        <v-icon icon="wifi"></v-icon>
+        <v-icon v-if="icon" :icon="icon"></v-icon>
       </div>
       <div>
-        <h1 class="v-plan-card__title">200 Mega</h1>
-        <p class="v-plan-card__subtitle">+Wi-fi e Modem grátis</p>
+        <h1 class="v-plan-card__title">{{ title }}</h1>
+        <p class="v-plan-card__subtitle">{{ subtitle }}</p>
       </div>
-
-
     </div>
-    
+
     <div class="v-plan-card__content">
+      <slot name="content" />
     </div>
 
     <div class="v-plan-card__action">
-      Consultar cobertura
+      <slot name="action" />
     </div>
   </div>
 </template>
@@ -30,7 +34,7 @@
 <style lang="scss" scoped>
 .v-plan-card {
   $self: &;
-  
+
   position: relative;
 
   display: grid;
@@ -39,7 +43,6 @@
   border-radius: $border-radius-2;
   width: 216px;
   height: 187px;
-
 
   &__features {
     display: grid;
@@ -68,6 +71,7 @@
       background-color: $purple-light;
       border-radius: $border-radius-1;
       text-wrap: nowrap;
+      text-transform: uppercase;
     }
 
     #{$self}__title {
@@ -81,10 +85,12 @@
   &__content {
     background-color: $gray-light;
   }
+
   &__action {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5px 0;
   }
 }
 </style>
