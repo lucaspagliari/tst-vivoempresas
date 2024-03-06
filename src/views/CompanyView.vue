@@ -87,9 +87,12 @@ const plans = [
       display: grid;
       align-items: center;
       justify-content: center;
+      gap: 30px;
 
-      grid-template-columns: repeat(3, auto);
-      gap: 18px;
+      @include breakpoint('md') {
+        grid-template-columns: repeat(3, auto);
+        gap: 18px;
+      }
     }
   }
 }

@@ -1,0 +1,13 @@
+$breakpoints: (
+  'xs': (max-width: 600px), // extra-small
+  'sm': (min-width: 600px), // small
+  'md': (min-width: 768px), // medium
+  'lg': (min-width: 1024px), // large
+  'xl': (min-width: 1360px) // extra-large
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  @media #{inspect(map-get($breakpoints, $breakpoint))} {
+    @content;
+  }
+}
