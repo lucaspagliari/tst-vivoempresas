@@ -12,7 +12,7 @@ const items = [{ title: "Meu Vivo empresas" }, { title: "Meu Vivo" }];
     <VNavigationBar v-model="navBar" :items="items" />
 
     <v-menu>
-      <v-button icon @click="() => (navBar = !navBar)">
+      <v-button @click="() => (navBar = !navBar)" data-testid="v-button-menu">
         <v-icon :icon="!navBar ? 'menu' : 'close'"></v-icon>
       </v-button>
     </v-menu>
