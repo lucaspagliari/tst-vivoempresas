@@ -9,15 +9,12 @@ const items = [{ title: "Meu Vivo empresas" }, { title: "Meu Vivo" }];
 
 <template>
   <div id="vivo-empresas">
-    <VNavigationBar v-model="navBar" :items="items"/>
+    <VNavigationBar v-model="navBar" :items="items" />
 
     <v-menu>
-      <div @click="() => (navBar = !navBar)">
-        <Transition name="fade" mode="out-in">
-          <v-icon v-if="!navBar" icon="menu"></v-icon>
-          <v-icon v-else icon="close"></v-icon>
-        </Transition>
-      </div>
+      <v-button icon @click="() => (navBar = !navBar)">
+        <v-icon :icon="!navBar ? 'menu' : 'close'"></v-icon>
+      </v-button>
     </v-menu>
 
     <RouterView class="main-content" />
