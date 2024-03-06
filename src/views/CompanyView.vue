@@ -13,6 +13,26 @@ const techs = [
     icon: "5g",
   },
 ];
+
+const plans = [
+  {
+    title: "200 Mega",
+    subtitle: "+Wi-fi e Modem grátis",
+    icon: "wifi",
+  },
+  {
+    title: "300 Mega",
+    subtitle: "+Wi-fi e Modem grátis",
+    badge: "O melhor custo benefício",
+    icon: "wifi",
+  },
+  {
+    title: "600 Mega",
+    subtitle: "+Wi-fi e Modem grátis",
+    badge: "Oferta especial",
+    icon: "wifi",
+  },
+];
 </script>
 
 <template>
@@ -26,9 +46,13 @@ const techs = [
 
     <h1 class="company__title">Descobrir</h1>
     <div class="company__plans">
-      <v-plan-card></v-plan-card>
-      <v-plan-card></v-plan-card>
-      <v-plan-card></v-plan-card>
+      <v-plan-card v-for="plan in plans" v-bind="plan">
+        <template #action>
+          <v-button color="green" text-color="white">
+            Consultar cobertura
+          </v-button>
+        </template>
+      </v-plan-card>
     </div>
   </div>
 </template>
