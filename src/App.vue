@@ -29,10 +29,9 @@ const items = [{ title: "Meu Vivo empresas" }, { title: "Meu Vivo" }];
   font-family: "Poppins";
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 
   .main-content {
-    margin-top: 90px;
+    padding: 90px 0 20px 0;
     height: 100vh;
     overflow: auto;
   }

@@ -60,7 +60,7 @@ const items = computed(() =>
 <style scoped lang="scss">
 .swiper {
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
   padding: 10px;
   text-align: center;
 }
