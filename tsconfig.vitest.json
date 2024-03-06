@@ -8,6 +8,6 @@
     "lib": [],
     "types": ["node", "jsdom"]
   },
-  "include": ["vitest.setup.ts"],
+  "include": ["vitest.setup.ts", "src"],
 
 }

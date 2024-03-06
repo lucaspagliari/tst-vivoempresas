@@ -1,7 +1,25 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Component VIcon > should render component and match spnapshot 1`] = `
-"<transition-stub data-v-5f2d8097="" name="fade" mode="out-in" appear="false" persisted="false" css="true" color="red">
+exports[`Component VIcon > should receive 'chip' as a prop and match spnapshot 1`] = `
+"<transition-stub data-v-5f2d8097="" name="fade" mode="out-in" appear="false" persisted="false" css="true">
+  <!---->
+</transition-stub>"
+`;
+
+exports[`Component VIcon > should receive 'close' as a prop and match spnapshot 1`] = `
+"<transition-stub data-v-5f2d8097="" name="fade" mode="out-in" appear="false" persisted="false" css="true">
+  <!---->
+</transition-stub>"
+`;
+
+exports[`Component VIcon > should receive 'menu' as a prop and match spnapshot 1`] = `
+"<transition-stub data-v-5f2d8097="" name="fade" mode="out-in" appear="false" persisted="false" css="true">
+  <!---->
+</transition-stub>"
+`;
+
+exports[`Component VIcon > should receive 'sim_card' as a prop and match spnapshot 1`] = `
+"<transition-stub data-v-5f2d8097="" name="fade" mode="out-in" appear="false" persisted="false" css="true">
   <!---->
 </transition-stub>"
 `;
