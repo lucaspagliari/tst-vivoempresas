@@ -8,7 +8,7 @@ const p = defineProps<{
 </script>
 
 <template>
-  <div class="v-plan-card">
+  <div class="v-plan-card" data-testid="v-plan-card">
     <div class="v-plan-card__features">
       <div v-if="badge" class="v-plan-card__badge">{{ badge }}</div>
 

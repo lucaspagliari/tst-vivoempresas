@@ -11,7 +11,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="v-tech-card">
+  <div class="v-tech-card" data-testid="v-tech-card">
     <div class="v-tech-card__title">
       {{ title }}
     </div>
