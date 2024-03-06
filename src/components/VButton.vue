@@ -21,10 +21,14 @@ const buttonStyle = computed(() => ({
 <style scoped lang="scss">
 
 .v-button {
-  font-family: $font-family;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: fit-content;
   padding: 8px;
   border: none;
   border-radius: $border-radius-1;
+  font-family: $font-family;
   cursor: pointer;
   opacity: 1;
   transition: all 250ms ease-in-out;

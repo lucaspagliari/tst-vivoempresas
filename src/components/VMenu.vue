@@ -10,7 +10,7 @@
 <style scoped lang="scss">
 .v-menu {
   display: grid;
-  grid-template-columns: 40px auto;
+  grid-template-columns: 50px auto;
   align-items: center;
   gap: 1rem;
   height: 88px;
