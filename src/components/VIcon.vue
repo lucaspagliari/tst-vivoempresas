@@ -1,26 +1,35 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import { defineAsyncComponent } from "vue";
+import { watch, shallowRef } from "vue";
 
 const props = defineProps<{
   icon: string;
-  color?: string;
 }>();
 
-const currentIcon = computed(() =>
-  defineAsyncComponent(
-    () => import(`../assets/svg/${props.icon}.svg?component`)
-  )
+const loadedIcon = shallowRef();
+watch(
+  () => props.icon,
+  async () => {
+    try {
+      const icon = await import(`@/assets/svg/${props.icon}.svg`);
+      loadedIcon.value = icon.default;
+    } catch (error) {
+      console.warn(`icon ${props.icon} not found`);
+    }
+  },
+  {
+    immediate: true,
+  }
 );
 </script>
 <template>
-  <span class="v-icon">
-    <component :is="currentIcon"  />
-  </span>
+  <Transition name="fade" mode="out-in">
+    <component :is="loadedIcon" />
+  </Transition>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .v-icon {
-  stroke: v-bind(color);
+  width: fit-content;
+  height: min-content;
 }
 </style>

@@ -1,3 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Component VIcon > should render component and match spnapshot 1`] = `"<span data-v-5f2d8097="" class="v-icon"><!----></span>"`;
+exports[`Component VIcon > should render component and match spnapshot 1`] = `
+"<transition-stub data-v-5f2d8097="" name="fade" mode="out-in" appear="false" persisted="false" css="true" color="red">
+  <!---->
+</transition-stub>"
+`;
