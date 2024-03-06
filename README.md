@@ -2,6 +2,8 @@
 
 Aplicação web para apresentação de planos e tecnologias disponíveis para os usuários.
 
+[Link](https://dzx840gu8ranm.cloudfront.net/)
+
 ## IDE Setup
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
@@ -25,7 +27,8 @@ Aplicação web para apresentação de planos e tecnologias disponíveis para os
 ### Testes
 - Vitest
 - Testing-library/vue
-- faker-js
+- Faker-js
+- Cypress
 
 ## Arquitetura na AWS
 
@@ -50,8 +53,16 @@ npm run dev
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Executar testes unitários com [Vitest](https://vitest.dev/)
 
 ```sh
 npm run test:unit
+```
+
+### Executar testes e2e com [Cypress](https://cypress.io/)
+
+```sh
+npm run test:e2e:dev
+
+npm run test:e2e
 ```
