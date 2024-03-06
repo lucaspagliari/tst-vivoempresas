@@ -14,7 +14,6 @@ defineProps<{
   <div class="v-tech-card">
     <div class="v-tech-card__title">
       {{ title }}
-      <slot name="title"></slot>
     </div>
     <div class="v-tech-card__icon">
       <v-icon :icon="icon"></v-icon>
